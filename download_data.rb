@@ -17,29 +17,39 @@ def download_page_names
   # returned JSON is invalid, so we have to hand-edit it :(
 end
 
-def safe_filename(name)
-  name = name.gsub(/\//, '_')
-  "raw/#{name}"
+def download_pages
+  pages = JSON.parse(IO.read("pages.json"))
+  pages['items'].each do |page|
+    LOG.info(page['label'])
+    page = Page.new(page['label'])
+    page.download_page_text
+  end
 end
 
-def download_page_text(title)
-  filename = safe_filename(title)
-  if !File.exists?(filename)
-    warn "Filename #{filename}"
-    uri = URI("http://#{WIKI_SITE}/w/index.php")
-    params = { :title => title, :action => 'raw' }
-    uri.query = URI.encode_www_form(params)
-    result = Net::HTTP.get(uri)
-    IO.write(filename, result)
+class Page < Object
+  def initialize(name)
+    @name = name
+  end
+
+  def safe_filename
+    name = @name.gsub(/\//, '_')
+    "raw/#{name}"
+  end
+
+  def download_page_text
+    if !File.exists?(safe_filename)
+      warn "Filename #{safe_filename}"
+      uri = URI("http://#{WIKI_SITE}/w/index.php")
+      params = { :title => @name, :action => 'raw' }
+      uri.query = URI.encode_www_form(params)
+      result = Net::HTTP.get(uri)
+      IO.write(safe_filename, result)
+    end
   end
 end
 
 def main
-  pages = JSON.parse(IO.read("pages.json"))
-  pages['items'].each do |page|
-    LOG.info(page['label'])
-    download_page_text(page['label'])
-  end
+  download_pages
 end
 
 main
