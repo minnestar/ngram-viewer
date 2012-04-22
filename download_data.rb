@@ -15,6 +15,14 @@ class Page < Object
     @vars = {}
   end
 
+  def vars
+    @vars
+  end
+
+  def session_text
+    @session_text
+  end
+
   def safe_filename
     name = @name.gsub(/\//, '_')
     "raw/#{name}"
@@ -42,7 +50,7 @@ class Page < Object
         var, value = line.split('=')
         # drop initial |
         var.slice!(0)
-        puts "#{var}=#{value}"
+        # puts "#{var}=#{value}"
         @vars[var] = value
       end
     end
@@ -61,16 +69,40 @@ def download_page_names
 end
 
 def download_pages(page_names)
+  pages = []
   page_names.each do |name|
     page = Page.new(name)
     page.download_page_text
+    page.read_raw
+    pages << page
   end
+  pages
 end
 
-def count_events(page_names)
-  page_names.each do |name|
-    page = Page.new(name)
-    page.read_raw
+def text_to_words(text)
+  # TODO(dan): Porter stemming
+  # TODO(dan): lowercase?
+  # TODO(dan): mark common words?
+  words = text.downcase.split(/[^\w]+/)
+  # remove words smaller than 2 chars
+  words.delete_if { |word| word.length < 2 }
+end
+
+def count_words_by_event(pages)
+  counts = Hash.new { |hash,key| hash[key] = Hash.new {
+      |hash2,key2| hash2[key2] = 0 } }
+  pages.each do |page|
+    # count # sessions in which a word appears, per event
+    text_to_words(page.session_text).each do |word|
+      counts[page.vars['Event']][word] += 1
+    end
+  end
+  counts.each do |event,wordmap|
+    wordmap.each do |word,count|
+      if count > 1
+        puts "#{event}\t#{word}\t#{count}"
+      end
+    end
   end
 end
 
@@ -81,9 +113,9 @@ def main
     page_names << page['label']
   end
 
-  download_pages(page_names)
+  pages = download_pages(page_names)
 
-  count_events(page_names)
+  count_words_by_event(pages)
 end
 
 main
