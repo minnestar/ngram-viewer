@@ -8,6 +8,10 @@ class Page < Object
     @vars = {}
   end
 
+  def name
+    @name
+  end
+
   def vars
     @vars
   end

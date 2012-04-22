@@ -2,9 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     json (1.6.6)
+    stemmify (0.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   json (~> 1.6)
+  stemmify (~> 0.0.2)

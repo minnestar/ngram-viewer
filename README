@@ -1,0 +1,10 @@
+This code requires Ruby 1.9.3.  I'd suggest using rvm, see
+beginrescueend.com.
+
+This code requires the gems in Gemfile.  You can use bundler, see
+gembundler.com.
+
+The 'stemmify' gem has an invalid security certificate, so you have to
+add this line to your ~/.gemrc:
+
+:ssl_verify_mode: 0
