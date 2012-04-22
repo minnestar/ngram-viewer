@@ -2,63 +2,9 @@
 
 require 'json'
 require 'logger'
-require 'net/http'
 
-WIKI_SITE = 'wiki.minnestar.org'
-
-LOG = Logger.new(STDERR)
-LOG.level = Logger::INFO
-
-class Page < Object
-  def initialize(name)
-    @name = name
-    @vars = {}
-  end
-
-  def vars
-    @vars
-  end
-
-  def session_text
-    @session_text
-  end
-
-  def safe_filename
-    name = @name.gsub(/\//, '_')
-    "raw/#{name}"
-  end
-
-  def download_page_text
-    if !File.exists?(safe_filename)
-      LOG.info("Download #{safe_filename}")
-      uri = URI("http://#{WIKI_SITE}/w/index.php")
-      params = { :title => @name, :action => 'raw' }
-      uri.query = URI.encode_www_form(params)
-      result = Net::HTTP.get(uri)
-      IO.write(safe_filename, result)
-    end
-  end
-
-  def read_raw
-    raw = IO.read(safe_filename)
-    # warn "** #{safe_filename}"
-    md = /{{Session\n(.+)}}(.+)/m.match(raw)
-    raise "empty md" if !md
-    # part 1 has vars
-    md[1].split("\n").each do |line|
-      if line.start_with?('|')
-        var, value = line.split('=')
-        # drop initial |
-        var.slice!(0)
-        # puts "#{var}=#{value}"
-        @vars[var] = value
-      end
-    end
-    # part 2 has session text
-    @session_text = md[2]
-    #puts "session_text #{@session_text}"
-  end
-end
+require_relative 'lib/page'
+require_relative 'lib/log'
 
 def download_page_names
   #page_name_query = '/wiki/Special:Ask/-5B-5BCategory:Session-5D-5D/limit%3D500/searchlabel%3D/format%3Djson'
