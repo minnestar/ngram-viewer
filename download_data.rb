@@ -50,7 +50,10 @@ end
 def count_words_by_event(pages)
   counts = Hash.new { |hash,key| hash[key] = Hash.new {
       |hash2,key2| hash2[key2] = 0 } }
+  sessions_per_event = Hash.new { |hash,key| hash[key] = 0 }
   pages.each do |page|
+    event = page.vars['Event']
+    sessions_per_event[event] += 1
     # count # sessions in which a word appears, per event
     # wordset has each word once (even if stated multiple times)
     wordset = Set.new
@@ -59,17 +62,14 @@ def count_words_by_event(pages)
       wordset.add(word)
     end
     wordset.each do |word|
-      counts[page.vars['Event']][word] += 1
-#      if word.start_with?('docu')
-#        warn "docu: #{page.name}"
-#      end
+      counts[event][word] += 1
     end
   end
   counts.each do |event,wordmap|
+    num_sessions = sessions_per_event[event]
     wordmap.each do |word,count|
-#      if count > 1
-        puts "#{event}\t#{word}\t#{count}"
-#      end
+      fraction = Float(count) / num_sessions
+      puts "#{event}\t#{word}\t#{count}\t#{fraction}"
     end
   end
 end
