@@ -1,0 +1,985 @@
+{
+	"properties": {
+		
+	},
+	"items": [
+		{
+			"label": "101 Ways to Make Cool Maps"
+		},
+		{
+			"label": "2 for 1 - Neighborhoods Online and Social Advocacy via Twitter"
+		},
+		{
+			"label": "3D Printing on a Makerbot"
+		},
+		{
+			"label": "410 Gone: A Discussion of Burnout, Depression, and Finding Happiness in the Technical World"
+		},
+		{
+			"label": "5 Crippling Habits That Kill Your Productivity (And the Tools to Fix It)"
+		},
+		{
+			"label": "7 Deadly Sins of Startup Marketing"
+		},
+		{
+			"label": "A Bootstrapper's Guide to the Startup Universe"
+		},
+		{
+			"label": "A Country Club For Tech"
+		},
+		{
+			"label": "A Highly Kinetic, Semi Dangerous Exposition"
+		},
+		{
+			"label": "A look around the corner: How permission-based marketing, data-alignment, and RFID will shape the future of commerce."
+		},
+		{
+			"label": "AJAX (MinneDemo 1)"
+		},
+		{
+			"label": "Ad hoc Processing data visualization session"
+		},
+		{
+			"label": "Agile Design (MinneBar 1)"
+		},
+		{
+			"label": "Algorithms and Refutations"
+		},
+		{
+			"label": "An Introduction to Groovy and Grails: or, How I learned that I could save my knowledge without losing my mind"
+		},
+		{
+			"label": "An Introduction to HTML5"
+		},
+		{
+			"label": "Ancient UNIX Tools You Should be Using but Probably Aren't"
+		},
+		{
+			"label": "Android * What is that robot up to?"
+		},
+		{
+			"label": "Android: Google's Software Stack for Mobile Devices"
+		},
+		{
+			"label": "Assholes Are Killing Your Project"
+		},
+		{
+			"label": "Asynchronous Social Pythoning"
+		},
+		{
+			"label": "Automating Infrastructure with Opscode Chef"
+		},
+		{
+			"label": "Ban Helvetica * Or Why Ignoring Web Safe Fonts Makes Your Website Better"
+		},
+		{
+			"label": "Ban Helvetica Part 2: How to Pair Fonts"
+		},
+		{
+			"label": "Beyond DevOps: User-Centered IT"
+		},
+		{
+			"label": "Beyond coffee, cigarettes, and the morning paper: Building hyperlocal news systems & engaging community"
+		},
+		{
+			"label": "Black Swans: GME-2 and Orbo"
+		},
+		{
+			"label": "Blogging for Benjamins: How To Turn Your Topical Blog Into Cash"
+		},
+		{
+			"label": "Bootstrapping your Tech Start-up: Building a Company the Old Fashion Way"
+		},
+		{
+			"label": "Bowling for Marketshare--How to Grow Your Startup by Narrowing Its Focus"
+		},
+		{
+			"label": "Brain-computer Interfaces: Hacking Wetware"
+		},
+		{
+			"label": "BrandCamp @ BarCamp: Bootstrapping Your Brand"
+		},
+		{
+			"label": "Brewing Technology"
+		},
+		{
+			"label": "Building Synthetic Worlds"
+		},
+		{
+			"label": "Building The Tech Community You Want to See"
+		},
+		{
+			"label": "Building Web Apps Discussion"
+		},
+		{
+			"label": "Building a File System From Scratch"
+		},
+		{
+			"label": "Bulletproof WordPress"
+		},
+		{
+			"label": "Business Apps for the Corporate Environment"
+		},
+		{
+			"label": "Business Idea Speed Dating 2.0"
+		},
+		{
+			"label": "Business Idea Speed Dating: Idea Guys versus Geeks versus Entrepreneurs"
+		},
+		{
+			"label": "CSS frameworks when and why to use them"
+		},
+		{
+			"label": "Citizen Journalism (MinneBar 1)"
+		},
+		{
+			"label": "Clojure for Newbs: An Introduction"
+		},
+		{
+			"label": "Collaboration 2.0"
+		},
+		{
+			"label": "Collaborative Multi-Touch Books for the iPad"
+		},
+		{
+			"label": "Color Theory & Consumption: A Matter of Life & Death?"
+		},
+		{
+			"label": "Color Theory: Hot-Neutral-Anchor"
+		},
+		{
+			"label": "Communication For Geeks:How to Influence Your Boss, Your Customers, And Your Team"
+		},
+		{
+			"label": "Consulting for fun and profit"
+		},
+		{
+			"label": "Content is a Banquet: Trends, Tactics, Tools"
+		},
+		{
+			"label": "Coworking (MinneBar 2)"
+		},
+		{
+			"label": "Creating Crackberry Apps That ''Don't'' Suck : How To and What's New in Waterloo"
+		},
+		{
+			"label": "Creating an Early Stage Fund - Group Discussion"
+		},
+		{
+			"label": "Creating products that inspire passionate users"
+		},
+		{
+			"label": "CrowdSourcing Platforms: What Works, What Doesn't?"
+		},
+		{
+			"label": "Crowdfunding: Fact or Crap?"
+		},
+		{
+			"label": "Cucumbers for UX Designers"
+		},
+		{
+			"label": "Curation FTW"
+		},
+		{
+			"label": "DJ Edna and Django: Software For The Rockstar's Geek Friend"
+		},
+		{
+			"label": "Data mining: what is it good for?"
+		},
+		{
+			"label": "Deploy Web Apps Automatically with GitHub & AWS"
+		},
+		{
+			"label": "Design + Dev + QA + Ops ="
+		},
+		{
+			"label": "Design 2.0: What's a web designer to do?"
+		},
+		{
+			"label": "Design Coding Panel Discussion"
+		},
+		{
+			"label": "Designing for Use"
+		},
+		{
+			"label": "Developing an Android RESTful Client App"
+		},
+		{
+			"label": "Discovering Scala"
+		},
+		{
+			"label": "Discussion: Tech and Process to Build Kickass Web Dev Teams"
+		},
+		{
+			"label": "Disintermediation"
+		},
+		{
+			"label": "Distributed Teamwork: How to succeed with a team you never see"
+		},
+		{
+			"label": "Do Not Track: Remarketers, Tracking Bugs, and Online Privacy"
+		},
+		{
+			"label": "Does the world need more storage?"
+		},
+		{
+			"label": "Dojo Javascript Toolkit"
+		},
+		{
+			"label": "Drupal Experiments"
+		},
+		{
+			"label": "Drupal and Your Application Database - A LoveHate Relationship"
+		},
+		{
+			"label": "Emerging Technology in Social Computing"
+		},
+		{
+			"label": "Enterprise Information Mashups: Web 2.0 + SOA +Data Visulization"
+		},
+		{
+			"label": "Enterprise Management for the Mac OS"
+		},
+		{
+			"label": "Every HTTP Status Code"
+		},
+		{
+			"label": "Experiences with Google App Engine"
+		},
+		{
+			"label": "Facebook: Fan Pages versus Tabs versus Apps"
+		},
+		{
+			"label": "Farmsourcing Rails: or How I Stopped Worrying and Love the Enterprise"
+		},
+		{
+			"label": "Faust: Flash Augmenting Standards"
+		},
+		{
+			"label": "Fight's On: An Introduction to Distributed Interactive Simulation"
+		},
+		{
+			"label": "FireSeed Streaming Supercomputer"
+		},
+		{
+			"label": "Five Marketing Points to Tackle BEFORE You Start Coding"
+		},
+		{
+			"label": "Flex (MinneBar 2)"
+		},
+		{
+			"label": "Founder Speed Dating"
+		},
+		{
+			"label": "From Open Source to Open Space: The Growth of Coworking and Collaboration Spaces in Minnesota and Across the Globe"
+		},
+		{
+			"label": "From idea to deployment: How I built a web app while riding to work on the bus"
+		},
+		{
+			"label": "Functional Languages and Agile Development"
+		},
+		{
+			"label": "Fund Raising using social media"
+		},
+		{
+			"label": "Funding a startup: a discussion of three approaches"
+		},
+		{
+			"label": "Fundraising from Minnesota"
+		},
+		{
+			"label": "Fundraising in Minnesota"
+		},
+		{
+			"label": "GTD for Startups"
+		},
+		{
+			"label": "Game Development with XNA"
+		},
+		{
+			"label": "Gearman: A Job Server to Scale"
+		},
+		{
+			"label": "Geeks Connecting Neighbors - BeNeighbors.org Tech Input Session"
+		},
+		{
+			"label": "Gentoo Linux, or Why in the World You Should Compile Everything"
+		},
+		{
+			"label": "Get Connected: Resource Map Your Way to Success"
+		},
+		{
+			"label": "Get More From Your Data"
+		},
+		{
+			"label": "Getting Started with jQuery Mobile"
+		},
+		{
+			"label": "Getting started with CSS3"
+		},
+		{
+			"label": "Getting started with iPhone & iPad Development"
+		},
+		{
+			"label": "Getting to know BuddyPress"
+		},
+		{
+			"label": "Global Robotics Innovation Park"
+		},
+		{
+			"label": "Going Social: Discovering Enterprise Social Media Touch Points"
+		},
+		{
+			"label": "Google Map API, Web 2.0 Technology, and Renewable Energy"
+		},
+		{
+			"label": "Google Page Speed Upgrades - Optimizing Website Downloads with a Simple Plugin"
+		},
+		{
+			"label": "Government and Civic Engagement"
+		},
+		{
+			"label": "Growing Pains: Life of a Tech Startup"
+		},
+		{
+			"label": "Growing Your iPhone and iPad App Business"
+		},
+		{
+			"label": "Growing communities of practice"
+		},
+		{
+			"label": "HTML5, CSS3, & Mobile: Responsive Design"
+		},
+		{
+			"label": "HTML5: The Coming Sea-change. Are You Ready?"
+		},
+		{
+			"label": "Hey Startups, Ask an Ad Agency (and Vice Versa)"
+		},
+		{
+			"label": "High-Performance GPU Computing on the iPad"
+		},
+		{
+			"label": "How Can Minnesota be Better?"
+		},
+		{
+			"label": "How I Learned to Stop Worrying and Love Localization (in CakePHP)"
+		},
+		{
+			"label": "How a Continuous Integration Server changes your team"
+		},
+		{
+			"label": "How to Fireproof Your Career and Chortle at Recession Worries"
+		},
+		{
+			"label": "How to Get a Job at a Major Software Company Even Though You're not a Geek or a Nerd"
+		},
+		{
+			"label": "How to Measure P&L When Your Price is Free"
+		},
+		{
+			"label": "How to Raise Investment for Your Startup, Guaranteed"
+		},
+		{
+			"label": "How to Run a Startup Like Genghis Khan"
+		},
+		{
+			"label": "How to Start a Company Based on U of M Technology"
+		},
+		{
+			"label": "I Blog, You Blog, Weblog. Why?"
+		},
+		{
+			"label": "I Think I Want to Be a Startup"
+		},
+		{
+			"label": "I Yam What I Am"
+		},
+		{
+			"label": "I'm a guru, not a god: A Tao of System Architecture"
+		},
+		{
+			"label": "IOS Development for the Beginner"
+		},
+		{
+			"label": "IP: Your Super Secret Weapon Against the Evil Competition"
+		},
+		{
+			"label": "IPhone and Mobile Development * Current Strategies"
+		},
+		{
+			"label": "Ill with a keyboard. Sick with a mouse."
+		},
+		{
+			"label": "Immersive Environments:More Than a Game"
+		},
+		{
+			"label": "Improving the Performance and Stability of your iOS App"
+		},
+		{
+			"label": "Innovation in a Convergent World"
+		},
+		{
+			"label": "Integrating with and building social networks"
+		},
+		{
+			"label": "Intellectual Property Tips for Entrepreneurs (Or, Wishing we knew then what we know now!)"
+		},
+		{
+			"label": "Intro to Drupal"
+		},
+		{
+			"label": "Intro to Git: What's the big deal?"
+		},
+		{
+			"label": "Intro to iPhone Development"
+		},
+		{
+			"label": "Intro to iPhone Game Development"
+		},
+		{
+			"label": "Introduction to Android Development for Startups"
+		},
+		{
+			"label": "Introduction to Satchmo"
+		},
+		{
+			"label": "Introduction to TYPOlight - feature rich, accessible, Open Source CMS"
+		},
+		{
+			"label": "Introduction to natural language processing"
+		},
+		{
+			"label": "Is a community for Designers and Developers possible?"
+		},
+		{
+			"label": "Is that a Hospital in your Pocket?"
+		},
+		{
+			"label": "JQuery Talk"
+		},
+		{
+			"label": "JRuby: A Free-form Q/A and Demo Session"
+		},
+		{
+			"label": "JVM Bytecode for Dummies"
+		},
+		{
+			"label": "JavaScript: WTF is \"this\"?"
+		},
+		{
+			"label": "Job Search = SUCKS: 12 Tips To Make The Process Less Painful"
+		},
+		{
+			"label": "Legal Implications of Limewire on File-Sharing Business Models"
+		},
+		{
+			"label": "Lessons on Recruiting Open Source Contributors from the Google Summer of Code"
+		},
+		{
+			"label": "Leveraging Cloud Hosting: Principles & Profits"
+		},
+		{
+			"label": "Leveraging Zend Framework for Sending Push Notifications"
+		},
+		{
+			"label": "Lightning Talks & Demos"
+		},
+		{
+			"label": "Lightning Talks (MinneBar 3)"
+		},
+		{
+			"label": "Local \"Indie\" Video Game Development"
+		},
+		{
+			"label": "Making Music Like a Nerd"
+		},
+		{
+			"label": "Making Music Like a Nerd II"
+		},
+		{
+			"label": "Malvertising, Black-hat SEO, Phishing"
+		},
+		{
+			"label": "Managing Your IT Career: Part III"
+		},
+		{
+			"label": "Managing Your IT Career: Part IV"
+		},
+		{
+			"label": "Managing your social media with Clove. Get an introduction to building on our SDK"
+		},
+		{
+			"label": "Mapping Your World With OpenStreetMap"
+		},
+		{
+			"label": "Marketing Your Technology Startup"
+		},
+		{
+			"label": "Marketing via Social Media"
+		},
+		{
+			"label": "Me, You and EC2"
+		},
+		{
+			"label": "Memcached and MySQL Sitting in a Tree"
+		},
+		{
+			"label": "Merb 1.0: Ruby on Rails that Scales"
+		},
+		{
+			"label": "Metaprogramming in Groovy"
+		},
+		{
+			"label": "Microformats (MinneBar 1)"
+		},
+		{
+			"label": "Midwestern Startups: What is Possible?"
+		},
+		{
+			"label": "MinneBar on MinneBar"
+		},
+		{
+			"label": "Minnesota Lean Startup Group * Join the conversation"
+		},
+		{
+			"label": "Mirah: A Pragmatic Replacement for Java"
+		},
+		{
+			"label": "Mobile App development using Ruby"
+		},
+		{
+			"label": "Mobile Web Flow Best Practices"
+		},
+		{
+			"label": "Monitoring and analyzing news coverage via NewsRack"
+		},
+		{
+			"label": "MonoRail"
+		},
+		{
+			"label": "Musician + Internet. Discuss."
+		},
+		{
+			"label": "Nailing Your First Client: Customer Acquisition for Geeks"
+		},
+		{
+			"label": "Native Android, Blackberry, and iPhone OS apps in JavaScript"
+		},
+		{
+			"label": "Negotiating Consulting Contracts That Work"
+		},
+		{
+			"label": "Neighborhoods and Social Media"
+		},
+		{
+			"label": "Networking Online"
+		},
+		{
+			"label": "NoSQL Patterns for Startups"
+		},
+		{
+			"label": "Non-profits: Strengthening Gives in a Social Media World"
+		},
+		{
+			"label": "On being an independent Open Source Software developer"
+		},
+		{
+			"label": "On the Couch with David Heinemeier Hansson"
+		},
+		{
+			"label": "Open Analytics Discussion"
+		},
+		{
+			"label": "Open Source Hardware"
+		},
+		{
+			"label": "Open Source Manufacturing"
+		},
+		{
+			"label": "Open Source tools for Businesses"
+		},
+		{
+			"label": "Open Systems Licenses and Legislation"
+		},
+		{
+			"label": "OpenGL ES from the Ground Up"
+		},
+		{
+			"label": "OpenPGP-GnuPG Key Signing Party"
+		},
+		{
+			"label": "OpenStreetMap 101"
+		},
+		{
+			"label": "OpenStreetMap 201"
+		},
+		{
+			"label": "PHP Security 101: Securing Your PHP Applications"
+		},
+		{
+			"label": "Paper Prototypes: There and Back Again"
+		},
+		{
+			"label": "Percolate Your Trep Net - Expanding Your Entrepreneurial Social Capital"
+		},
+		{
+			"label": "Percolating TurboGeeks: Exploring Why Innovation Networks Form The Way They Do"
+		},
+		{
+			"label": "Personal Rapid Transit"
+		},
+		{
+			"label": "Phonegap + jQuery Mobile = Awesome"
+		},
+		{
+			"label": "Physical APIs * Connecting Software to Hardware"
+		},
+		{
+			"label": "Power WordPress plus MinneWordCamp Discussion"
+		},
+		{
+			"label": "Presentation and Discussion: E-Democracy - Online Neighborhoods"
+		},
+		{
+			"label": "Presentation and Discussion: Groupserver"
+		},
+		{
+			"label": "Product Launch: From the initial itch to a global marketplace"
+		},
+		{
+			"label": "Programmer and Designer Roles"
+		},
+		{
+			"label": "Pseudo Elements for Fun and Profit"
+		},
+		{
+			"label": "Publish or Perish or Self-Publish: From Franklin to eBook Same Game, New Rules"
+		},
+		{
+			"label": "Put information in the rear-view mirror - ride with knowledge"
+		},
+		{
+			"label": "Putting a Neighborhood Online: Creating Sustainable Online Communities"
+		},
+		{
+			"label": "Quick and Dirty Introduction to Drupal"
+		},
+		{
+			"label": "RESTful Development"
+		},
+		{
+			"label": "RFP - an open source, mobileweb voting system"
+		},
+		{
+			"label": "Rapid Application Development in Action, Minnesota Daily Finals Edition"
+		},
+		{
+			"label": "Real World CSS Design"
+		},
+		{
+			"label": "Really Simple CMS with CakePHP"
+		},
+		{
+			"label": "Recruiting For Start Ups (Or any Size Company)"
+		},
+		{
+			"label": "Recruiting For Start Ups 2012 (Or any Size Company)"
+		},
+		{
+			"label": "Refresh TwinCities"
+		},
+		{
+			"label": "Remix + Adaptive Avenue: A Commercial Application of Best Buy's Open API"
+		},
+		{
+			"label": "Reputationland"
+		},
+		{
+			"label": "Rethinking the User Experience for Mobile"
+		},
+		{
+			"label": "Revenge of the Type Systems"
+		},
+		{
+			"label": "Room and Bored"
+		},
+		{
+			"label": "Rough Spots with Agile Development"
+		},
+		{
+			"label": "Ruby on Rails (MinneBar 1)"
+		},
+		{
+			"label": "Ruby on Rails: An Overview"
+		},
+		{
+			"label": "Running Your Business on Open Source"
+		},
+		{
+			"label": "Running a Virtual Server with Confidence"
+		},
+		{
+			"label": "S is for Strategy"
+		},
+		{
+			"label": "SQL Server Performance Tuning with Execution Plans"
+		},
+		{
+			"label": "Sausage Making: Communication lessons from the Open Source world"
+		},
+		{
+			"label": "Scalable, Adaptive, Agnostic: the Next-Generation CMS Authors Need You to Build"
+		},
+		{
+			"label": "Scaling a Startup from 3 to 30 to 300"
+		},
+		{
+			"label": "Scaling with Software"
+		},
+		{
+			"label": "Schumpeters HiveConsciously Weaving Our Collaborative Innovation Networks"
+		},
+		{
+			"label": "Screw You LAMP. Plus Virtualization"
+		},
+		{
+			"label": "Scrum Experience Report"
+		},
+		{
+			"label": "Search Engine Optimization"
+		},
+		{
+			"label": "Secrets of a Successful Open Source Project"
+		},
+		{
+			"label": "Serverified Virtualification"
+		},
+		{
+			"label": "Set up a Continuous Integration Server in 10 minutes"
+		},
+		{
+			"label": "She's Geeky? Why are you geeky?"
+		},
+		{
+			"label": "Silos are for Farmers"
+		},
+		{
+			"label": "Six Reasons to Open an Offline Store (Especially if you Sell Online) & How to do it Right (or at Least More Right)"
+		},
+		{
+			"label": "Small Teams, Big Results"
+		},
+		{
+			"label": "Social Media ... So What?"
+		},
+		{
+			"label": "Social Networks: How the GetGo Team Created GetGoMN"
+		},
+		{
+			"label": "Social Next: What Being Human Online Will Look Like"
+		},
+		{
+			"label": "Social Search in the Corporate Enviroment"
+		},
+		{
+			"label": "Social Web Design: One Step Forward, Two Steps Back"
+		},
+		{
+			"label": "Social media for learning spaces in work, schools, and communities: Extending the spirit of Minnebar"
+		},
+		{
+			"label": "Software Development for Healthcare Data"
+		},
+		{
+			"label": "Stackless Python Twisted-Style -- There will be blood"
+		},
+		{
+			"label": "Startup Camp Is Coming"
+		},
+		{
+			"label": "Startup Tools"
+		},
+		{
+			"label": "Startups vs. Consulting: smackdown"
+		},
+		{
+			"label": "Stasis: Transactions Without SQL"
+		},
+		{
+			"label": "State of the State: Technology in Minnesota"
+		},
+		{
+			"label": "Storing and re-using files for the long term: A Think Tanky, Panel-ish Conversation"
+		},
+		{
+			"label": "Success in Software Consulting"
+		},
+		{
+			"label": "Symfony PHP5 Framework"
+		},
+		{
+			"label": "TOP SECRET - Army Marketing Secrets"
+		},
+		{
+			"label": "Team Anti-Patterns"
+		},
+		{
+			"label": "Techniques and Algorithms for Building Distributed Systems"
+		},
+		{
+			"label": "The Art of Message Queues"
+		},
+		{
+			"label": "The Equal Sign"
+		},
+		{
+			"label": "The Evolution of Advertising"
+		},
+		{
+			"label": "The First Thing About Ajax"
+		},
+		{
+			"label": "The Great Escape From The Not So Great Career Rut"
+		},
+		{
+			"label": "The Hardware Startup: From Napkin To Retail Shelf"
+		},
+		{
+			"label": "The Internet and the Future of Art"
+		},
+		{
+			"label": "The Mathematical Foundations of Music"
+		},
+		{
+			"label": "The Missing Web Curriculum: What Every Web Professional Should Have Learned"
+		},
+		{
+			"label": "The Myth of Digital Influence"
+		},
+		{
+			"label": "The Perils and Pitfalls of Consulting"
+		},
+		{
+			"label": "The Secrets of International Talent Acquisition"
+		},
+		{
+			"label": "The most interesting challenges ahead for journalism"
+		},
+		{
+			"label": "The spectrum of user experience design and testing: From Full Scale to Quick and Cheap"
+		},
+		{
+			"label": "This Thing called Twitter"
+		},
+		{
+			"label": "Tips & Tricks to Hack da Planet (by You for You)"
+		},
+		{
+			"label": "Titanium Powered Desktop & Mobile Apps"
+		},
+		{
+			"label": "Top Trends and Winners in the Application World"
+		},
+		{
+			"label": "Translating Geek: Executable Documentation"
+		},
+		{
+			"label": "Twin Cities Open Circuit & Free Geek"
+		},
+		{
+			"label": "Understanding Monads (described in JavaScript)"
+		},
+		{
+			"label": "Varnish, The Good, The Awesome, and the Downright Crazy"
+		},
+		{
+			"label": "Video Transcoding"
+		},
+		{
+			"label": "Video2Panorama"
+		},
+		{
+			"label": "Web 2.0 in the Real World"
+		},
+		{
+			"label": "Web 2.0: In business, out of beta"
+		},
+		{
+			"label": "Web App Builders Roundtable"
+		},
+		{
+			"label": "Web Framework Panel"
+		},
+		{
+			"label": "What Does Lean Even Mean? or Bootstrapping Your Way to a Pivot"
+		},
+		{
+			"label": "What We Don't Know"
+		},
+		{
+			"label": "What is Drupal?"
+		},
+		{
+			"label": "What should we do about Apple?"
+		},
+		{
+			"label": "What the F is Social Curation?"
+		},
+		{
+			"label": "What's New in PHP 5.4"
+		},
+		{
+			"label": "What's Your WHY?"
+		},
+		{
+			"label": "When WordPress Gives You too Little and Drupal too Much, Choose Contao"
+		},
+		{
+			"label": "Where My (Tech) Ladies At? - Let's Connect"
+		},
+		{
+			"label": "Who Do You Know - Evaluating Your Entrepreneurial Social Capital"
+		},
+		{
+			"label": "Why Don't You Blog More?"
+		},
+		{
+			"label": "Why Drupal?"
+		},
+		{
+			"label": "Why Drupal? An expert panel"
+		},
+		{
+			"label": "Why Should I Care About Grails?"
+		},
+		{
+			"label": "Why you need to make your Web site accessible to the disabled"
+		},
+		{
+			"label": "Wikis with Structured Data"
+		},
+		{
+			"label": "Windows Phone 7 What You Should Know"
+		},
+		{
+			"label": "Word Nerd: The Quick and Dirty Guide to Web and Social Media Content Done Right"
+		},
+		{
+			"label": "WordPress Geek-Out"
+		},
+		{
+			"label": "WordPress Plugin Speed Dating"
+		},
+		{
+			"label": "Wordpress as a Content Management System"
+		},
+		{
+			"label": "XMPP on the Web: Soashable"
+		},
+		{
+			"label": "You can do that? Selling agile to the enterprise"
+		}
+	]
+}
