@@ -9,7 +9,7 @@ require_relative 'lib/page'
 require_relative 'lib/log'
 
 # Apply Porter stemming to session text
-PORTER_STEMMING = false
+PORTER_STEMMING = true
 
 def download_page_names
   #page_name_query = '/wiki/Special:Ask/-5B-5BCategory:Session-5D-5D/limit%3D500/searchlabel%3D/format%3Djson'
@@ -63,7 +63,7 @@ def count_words_by_event(pages)
       words = text_to_words(text)
       if PORTER_STEMMING
         stems = stem_words(words) 
-        stems.each_with_idx do |stem, idx|
+        stems.each_with_index do |stem, idx|
           words_to_stems[words[idx]] = stem
         end
         wordset.merge(stems)
@@ -107,10 +107,11 @@ def main
         stemfile << "#{word},#{stem}\n"
       end
     end
+    porter_infix = "_porter"
   end
   # write word stats file
   cols = [ :event, :word, :count, :fraction ]
-  filename = 'word_stats.csv'
+  filename = "word_stats#{porter_infix}.csv"
   LOG.info("Write #{filename}")
   File.open(filename, 'w') do |wordfile|
     wordfile << cols.join(',') << "\n"
@@ -131,9 +132,9 @@ def main
     event = record[:event]
     earliest[word] = event if !earliest.key?(word) || event < earliest[word]
   end
-  filename = 'word_stats_summary.csv'
+  filename = "word_stats_summary#{porter_infix}.csv"
   LOG.info("Write #{filename}")
-  File.open('word_stats_summary.csv', 'w') do |summaryfile|
+  File.open(filename, 'w') do |summaryfile|
     summaryfile << 'word,count,earliest_event' << "\n"
     total_count.each do |word, count|
       summaryfile << [ word, count, earliest[word] ].join(',') << "\n"
