@@ -31,47 +31,60 @@ def download_pages(page_names)
 end
 
 # Simple tokenizer: give text, get back array of words
-def text_to_words(text, porter_stemming = false)
+def text_to_words(text)
   # TODO(dan): mark common words?
   words = text.downcase.split(/[^\w]+/)
   # remove words smaller than 2 chars
   words.delete_if { |word| word.length < 2 }
-
-  if porter_stemming
-    new_words = []
-    words.each do |word|
-      new_words << word.stem
-    end
-    words = new_words
-  end
   words
+end
+
+# Take some words and Porter stem them
+def stem_words(words)
+  new_words = []
+  words.each do |word|
+    new_words << word.stem
+  end
+  new_words
 end
 
 def count_words_by_event(pages)
   counts = Hash.new { |hash,key| hash[key] = Hash.new {
       |hash2,key2| hash2[key2] = 0 } }
   sessions_per_event = Hash.new { |hash,key| hash[key] = 0 }
+  words_to_stems = {}
   pages.each do |page|
     event = page.vars['Event']
     sessions_per_event[event] += 1
     # count # sessions in which a word appears, per event
     # wordset has each word once (even if stated multiple times)
     wordset = Set.new
-    text_to_words(page.session_text,
-                  porter_stemming = PORTER_STEMMING).each do |word|
-      wordset.add(word)
+    [ page.session_text, page.name ].each do |text|
+      words = text_to_words(text)
+      if PORTER_STEMMING
+        stems = stem_words(words) 
+        stems.each_with_idx do |stem, idx|
+          words_to_stems[words[idx]] = stem
+        end
+        wordset.merge(stems)
+      else
+        wordset.merge(words)
+      end
     end
     wordset.each do |word|
       counts[event][word] += 1
     end
   end
+  records = []
   counts.each do |event,wordmap|
     num_sessions = sessions_per_event[event]
     wordmap.each do |word,count|
       fraction = Float(count) / num_sessions
-      puts "#{event}\t#{word}\t#{count}\t#{fraction}"
+      records << { :event => event, :word => word,
+        :count => count, :fraction => fraction }
     end
   end
+  [ words_to_stems, records ]
 end
 
 def main
@@ -83,7 +96,49 @@ def main
 
   pages = download_pages(page_names)
 
-  count_words_by_event(pages)
+  words_to_stems, records = count_words_by_event(pages)
+  # write word => stem file
+  if PORTER_STEMMING
+    filename = 'words_to_stems.csv'
+    LOG.info("Write #{filename}")
+    File.open(filename, 'w') do |stemfile|
+      stemfile << "word,stem\n"
+      words_to_stems.each do |word, stem|
+        stemfile << "#{word},#{stem}\n"
+      end
+    end
+  end
+  # write word stats file
+  cols = [ :event, :word, :count, :fraction ]
+  filename = 'word_stats.csv'
+  LOG.info("Write #{filename}")
+  File.open(filename, 'w') do |wordfile|
+    wordfile << cols.join(',') << "\n"
+    records.each do |record|
+      arr = []
+      cols.each do |col|
+        arr << record[col]
+      end
+      wordfile << arr.join(',') << "\n"
+    end
+  end
+  # write word stats summary (by event)
+  earliest = {}
+  total_count = Hash.new { |hash,key| hash[key] = 0 }
+  records.each do |record|
+    word = record[:word]
+    total_count[word] += record[:count]
+    event = record[:event]
+    earliest[word] = event if !earliest.key?(word) || event < earliest[word]
+  end
+  filename = 'word_stats_summary.csv'
+  LOG.info("Write #{filename}")
+  File.open('word_stats_summary.csv', 'w') do |summaryfile|
+    summaryfile << 'word,count,earliest_event' << "\n"
+    total_count.each do |word, count|
+      summaryfile << [ word, count, earliest[word] ].join(',') << "\n"
+    end
+  end
 end
 
 main
