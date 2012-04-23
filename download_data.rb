@@ -9,7 +9,7 @@ require_relative 'lib/page'
 require_relative 'lib/log'
 
 # Apply Porter stemming to session text
-PORTER_STEMMING = true
+PORTER_STEMMING = false
 
 def download_page_names
   #page_name_query = '/wiki/Special:Ask/-5B-5BCategory:Session-5D-5D/limit%3D500/searchlabel%3D/format%3Djson'
